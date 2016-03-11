@@ -1,0 +1,4 @@
+
+gspkgDeps = [ "sdl", "gl" ]
+pkgDeps = []
+
