@@ -5,12 +5,17 @@
 
 namespace gast
 {
+	struct Camera;
+	
 	struct View
 	{
 		View ();
-		void setWindow (sdl::Window *_wnd);
+		View (sdl::Window& _wnd, Camera& _cam);
+		void setWindow (sdl::Window& _wnd);
+		void setCamera (Camera& _cam);
 		
 		sdl::Window* wnd;
+		Camera* cam;
 	};
 }
 
